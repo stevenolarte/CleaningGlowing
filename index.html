@@ -128,28 +128,42 @@
 <script>
     $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        loop: false, // Permite que el carrusel haga loop
+        loop: false,
         margin: 20,
-        dots: true, // Muestra los dots de navegación
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
         responsive: {
             0: {
-                items: 1, // Mostrar 1 elemento en pantallas pequeñas
-                stagePadding: 40 // Ajustar el espacio adicional en el extremo de la etapa
+                items: 1,
+                stagePadding: 40
             },
             600: {
-                items: 2, // Mostrar 2 elementos en pantallas medianas
-                stagePadding: 20 // Ajustar el espacio adicional en el extremo de la etapa
+                items: 2,
+                stagePadding: 20
             },
             1000: {
-                items: 3 // Mostrar 3 elementos en pantallas grandes
+                items: 3
             }
         },
-        touchDrag: true, // Permite el desplazamiento táctil en dispositivos móviles
-        touchDragThreshold: 0.1 // Hace que el desplazamiento sea más sensible al tacto (10% del ancho del contenedor)
+        touchDrag: true,
+        touchDragThreshold: 0.1,
+        onTranslated: function(){
+            var currentIndex = this.current();
+            var itemsCount = this.items().length;
+            if(currentIndex === itemsCount - 1){ // Si se muestra el último elemento
+                var $carousel = this;
+                setTimeout(function(){
+                    $carousel.to(0); // Regresar al primer elemento
+                }, 5000); // Esperar 5 segundos antes de regresar al primer elemento
+            }
+        }
     });
 });
-
 </script>
+
+
 <section id="our-projects" class="Container-o">
     <div class="projects-container">
         <h2>Highlighted Projects</h2>
