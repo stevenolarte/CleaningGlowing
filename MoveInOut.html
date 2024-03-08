@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Glowing llc</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+    <body>
+        <div class="header-bar">
+            <header class="header-container">
+                <!-- Menú de navegación para dispositivos móviles -->
+                <div class="menu-toggle">
+                    <i class="fa fa-bars" style="color: black;"></i> <!-- Icono de hamburguesa -->
+                </div>
+    
+                <!-- Menú de navegación estándar para pantallas más grandes -->
+                <div class="menu-container">
+                    <nav>
+                        <ul class="menu" id="menu">
+                            <li><a href="index.html#home-section">Home</a></li>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="index.html#services">Services</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <!-- Contenedor para redes sociales -->
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100073457594711" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/cleaning_glowing?igsh=Z3A2am42dmFxd2Q0&utm_source=qr" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://wa.me/17023486688" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+                </div>
+            </header>
+        </div>
+        <script>
+            // Script para controlar el menú hamburguesa en pantallas pequeñas
+            $(document).ready(function(){
+                $('.menu-toggle').click(function(){
+                    $('.menu-container').toggle();
+                });
+            });
+        </script>

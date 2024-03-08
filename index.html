@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Glowing llc</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+    <body>
+        <div class="header-bar">
+            <header class="header-container">
+                <!-- Menú de navegación para dispositivos móviles -->
+                <div class="menu-toggle">
+                    <i class="fa fa-bars" style="color: black;"></i> <!-- Icono de hamburguesa -->
+                </div>
+    
+                <!-- Menú de navegación estándar para pantallas más grandes -->
+                <div class="menu-container">
+                    <nav>
+                        <ul class="menu" id="menu">
+                            <li><a href="#home-section">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <!-- Contenedor para redes sociales -->
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100073457594711" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/cleaning_glowing?igsh=Z3A2am42dmFxd2Q0&utm_source=qr" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="https://wa.me/17023486688" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+                </div>
+            </header>
+        </div>
+        <script>
+            // Script para controlar el menú hamburguesa en pantallas pequeñas
+            $(document).ready(function(){
+                $('.menu-toggle').click(function(){
+                    $('.menu-container').toggle();
+                });
+            });
+        </script>
+   
+    <!-- Sección de imagen principal -->
+    <div class="imagen-principal" id="home-section">
+        <img src="opcion 3 img central.jpg" alt="">
+        <div class="texto-superpuesto">
+            <h1>Cleaning Glowing llc</h1>
+        </div>
+    </div>
+    
+    <!-- Sección "Sobre Nosotros" -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About Us</h2>
+            <p>Welcome to Cleaning Glowing llc, where 
+                excellence meets every corner of your 
+                home. We take pride in being your trusted 
+                partner for impeccable cleaning services 
+                that not only sparkle surfaces 
+                but also elevate your lifestyle.
+            </p>
+        </div>
+    </section>
+
+<!-- Sección "Servicios" -->
+<section id="services">
+    <div class="services-txt">
+        <h2>Services</h2>
+    </div>
+    <!-- Contenedor de servicios -->
+    <div class="services-container owl-carousel">
+        <!-- Contenido de servicios -->
+        <!-- Primer servicio -->
+        <a href="residentialCleaningInfo.html" class="service-link">
+            <div class="service-item">
+                <img src="Recurso 1.png" alt="Image 1" class="service-image">
+                <div class="service-text">Residential cleaning</div>
+            </div>
+        </a>
+        <!-- Segundo servicio -->
+        <a href="commercial-cleaning.html" class="service-link">
+            <div class="service-item">
+                <img src="Recurso 2.png" alt="Image 2" class="service-image">
+                <div class="service-text">Commercial Cleaning</div>
+            </div>
+        </a>
+        <!-- Tercer servicio -->
+        <a href="CleaningArbnb.html" class="service-link">
+            <div class="service-item">
+                <img src="Recurso 3.png" alt="Image 3" class="service-image">
+                <div class="service-text">Cleaning Airbnb</div>
+            </div>
+        </a>
+        <!-- Cuarto servicio -->
+        <a href="MoveInOut.html" class="service-link">
+            <div class="service-item">
+                <img src="Recurso 4.png" alt="Image 4" class="service-image">
+                <div class="service-text">Move in/out</div>
+            </div>
+        </a>
+        <!-- Quinto servicio -->
+        <a href="postConstruction.html" class="service-link">
+            <div class="service-item">
+                <img src="Recurso 5.png" alt="Image 5" class="service-image">
+                <div class="service-text">Post Construction Cleaning</div>
+            </div>
+        </a>
+        <!-- Fin del contenido de servicios -->  
+</section>
+        <div class="contact-button-container">
+            <button id="whatsapp-contact" onclick="window.open('https://wa.me/17023486688?text=Hello,%20I%20would%20like%20more%20information%20about%20your%20services', '_blank')">Contact us</button>
+        </div>
+
+<!-- Agrega estos scripts al final del cuerpo de tu HTML -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop: false, // Permite que el carrusel haga loop
+        margin: 20,
+        dots: true, // Muestra los dots de navegación
+        responsive: {
+            0: {
+                items: 1, // Mostrar 1 elemento en pantallas pequeñas
+                stagePadding: 40 // Ajustar el espacio adicional en el extremo de la etapa
+            },
+            600: {
+                items: 2, // Mostrar 2 elementos en pantallas medianas
+                stagePadding: 20 // Ajustar el espacio adicional en el extremo de la etapa
+            },
+            1000: {
+                items: 3 // Mostrar 3 elementos en pantallas grandes
+            }
+        },
+        touchDrag: true, // Permite el desplazamiento táctil en dispositivos móviles
+        touchDragThreshold: 0.1 // Hace que el desplazamiento sea más sensible al tacto (10% del ancho del contenedor)
+    });
+});
+
+</script>
+<section id="our-projects" class="Container-o">
+    <div class="projects-container">
+        <h2>Highlighted Projects</h2>
+        <p>Discover the essence of transformative cleanliness
+            with our cleaning services. From the impeccable
+            shine of your home to the pristine tidiness of
+            your commercial space, we are dedicated to raising
+            your standards and creating impeccable environments
+            that reflect your excellence. With passion and precision,
+            each cleaning service is an expression of our commitment
+            to perfection and meticulous care. Trust us to make every 
+            corner sparkle with freshness and clarity while we free you to focus on what matters most.
+        </p>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel carousel-automatic">
+            <img src="carrusel 1.jpg" alt="Slide 1" class="active">
+            <img src="carrusel 2.jpg" alt="Slide 2">
+            <img src="carrusel 3.jpg" alt="Slide 3">
+            <img src="carrusel 4.jpg" alt="Slide 4">
+            <img src="carrusel 5.jpg" alt="Slide 5">
+            <img src="carrusel 6.jpg" alt="Slide 6">
+            <img src="carrusel 7.jpg" alt="Slide 7">
+            <img src="carrusel 8.jpg" alt="Slide 8">
+            <img src="carrusel 9.jpg" alt="Slide 9">
+            <img src="carrusel 10.jpg" alt="Slide 10">
+        </div>
+        <div class="carousel-icon"></div>
+    </div>
+    <div class="cierre-section">
+        <p>This image captures the essence of our commitment to excellence</p>
+    </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const carousel = document.querySelector('.carousel');
+    const images = document.querySelectorAll('.carousel img');
+    const iconContainer = document.querySelector('.carousel-icon');
+
+    let index = 0;
+
+    function showImage(n) {
+        images.forEach(image => image.classList.remove('active'));
+        images[n].classList.add('active');
+    }
+
+    function updateIcon(n) {
+        iconContainer.querySelectorAll('span').forEach(span => span.classList.remove('active'));
+        iconContainer.querySelectorAll('span')[n].classList.add('active');
+    }
+
+    function nextImage() {
+        index = (index + 1) % images.length;
+        showImage(index);
+        updateIcon(index);
+    }
+
+    // Crear íconos de seguimiento
+    images.forEach((image, i) => {
+        const span = document.createElement('span');
+        span.addEventListener('click', () => {
+            index = i;
+            showImage(index);
+            updateIcon(index);
+        });
+        iconContainer.appendChild(span);
+    });
+
+    // Iniciar carrusel
+    showImage(index);
+    updateIcon(index);
+    setInterval(nextImage, 5000); // Cambia la imagen cada 5 segundos
+});
+</script>
+
+
+<!-- Sección "Testimonials" -->
+<section id="testimonials" style="position: relative; z-index: 2;">
+        <div class="testimonials-tc">
+            <h2>Testimonials</h2>
+        <section id="boxes" style="position: relative; z-index: 2;">
+            <div class="owl-carousel owl-theme">
+                <div class="box">
+                    <div class="box-image zoom-image"><img src="testimonio 1.jpg" alt="Testimonio 1"></div>
+                    <div class="box-content">
+                        <h2>Claudia, 32 years old, Bank Worker</h2>
+                        <p>Being a busy woman working in the banking world, finding time for household chores used to be a constant challenge. Since I started relying on Cleaning Glowing's cleaning services, my life has taken a turn. Now, I can focus on my career without worrying about the mess at home. I'm grateful for their professionalism and efficiency.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-image zoom-image"><img src="testimonio 2.jpg" alt="Testimonio 2"></div>
+                    <div class="box-content">
+                        <h2>Richard, 50 years old, Retired</h2>
+                        <p>Being a retiree living alone, managing household chores used to be quite challenging for me. However, since I discovered Cleaning Glowing's cleaning services, my life has become significantly easier. Now, I can enjoy my retirement without the worry of keeping my home tidy. I truly appreciate the professionalism and efficiency of the Cleaning Glowing team.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-image zoom-image"><img src="testimonio 3.jpg" alt="Testimonio 3"></div>
+                    <div class="box-content">
+                        <h2>Evelyn, 70 years old, Grateful Customer</h2>
+                        <p>At 70, household chores became overwhelming, but Cleaning Glowing changed that for me. I'm sincerely thankful for the dedication and respect they show on every visit. My home sparkles, and their service has made a difference in my quality of life. I wholeheartedly recommend Cleaning Glowing to anyone looking for a reliable and friendly cleaning service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+</section>
+
+<div class="form-container">
+    <form action="/submit" method="post">
+      <h2>Schedule Your Appointment</h2>
+  
+      <label for="nombre">Name:</label>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+    
+      <label for="fecha">Date you want to schedule your appointment: </label>
+      <input type="date" id="fecha" name="fecha" required><br><br>
+    
+      <label for="hora">Time you want to schedule your appointment: </label>
+      <input type="time" id="hora" name="hora" required><br><br>
+    
+      <label for="direccion">Address:</label>
+      <input type="text" id="direccion" name="direccion" required><br><br>
+    
+      <label for="telefono">Contact Phone:</label>
+      <input type="tel" id="telefono" name="telefono" required><br><br>
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+    
+      <label for="servicio">Select a Service:</label>
+      <select id="servicio" name="servicio" required>
+        <option value="service1">Residential cleaning</option>
+        <option value="service2">Commercial cleaning</option>
+        <option value="service3">Cleaning airbnb</option>
+        <option value="service4">Move in out</option>
+        <option value="service5">Post construction cleaning</option>
+      </select><br><br>
+    
+      <button type="submit">Schedule</button>
+    </form>
+  </div>
+  
+  <footer class="footer">
+
+    <div class="footer-links">
+        <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#schedule-appointment">Schedule an Appointment</a></li>
+            <li><a href="login.html">Are you an Employee?</a></li>
+            <li><a href="#about">About us?</a></li>
+            <li><a href="#">work with us</a></li>
+            <li><a href="#testimonials">What makes us superior to other grooming services?</a></li>
+        </ul>
+    </div>
+
+    
+    <section id="map-container">
+        <div id="map"></div>
+    </section>
+    
+    <div class="contact-social-container">
+
+        <div class="contact-social-links">
+            <p>Visit our social networks</p>
+            <a href="https://www.facebook.com/profile.php?id=100073457594711" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/cleaning_glowing?igsh=Z3A2am42dmFxd2Q0&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/17023486688" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+    </div>
+
+
+</footer>
+
+
+<script>
+    function initMap() {
+        var location = {lat: 36.1539, lng: -115.1283}; // Coordenadas de Las Vegas
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: location
+        });
+
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            title: '1624 Palm St, Unit 19, Las Vegas, Nevada, 89104'
+        });
+    }
+
+    // Ejecutar la inicialización del mapa después de que se cargue el DOM
+    document.addEventListener("DOMContentLoaded", function() {
+        initMap();
+    });
+</script>
+<!-- Script de carga asíncrona del API de Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJRYXAp1NH7659AtF5_qXpv75YguVk7HE&callback=initMap" async defer></script>
+
+    </body>
+
+
+</html>

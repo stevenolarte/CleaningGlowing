@@ -1,0 +1,1424 @@
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+  display: none; /* Oculta el menú toggle por defecto */
+}
+
+.menu-toggle i {
+  color: black; /* Color del icono de hamburguesa */
+  font-size: 20px; /* Tamaño del icono de hamburguesa */
+  cursor: pointer; /* Cambia el cursor a una mano cuando pasas sobre el icono */
+  margin-left: 20px; /* Espacio entre el icono de hamburguesa y el borde del contenedor */
+}
+
+.menu-toggle i:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el cursor sobre el icono */
+}
+
+.header-bar {
+  width: 100%; /* El ancho del contenedor será el 100% del ancho del viewport */
+}
+
+.menu-container nav ul li a {
+  text-decoration: none; /* Quitar la decoración de subrayado por defecto */
+  color: #000; /* Color del texto */
+  font-weight: bold; /* Establecer el peso de la fuente */
+  transition: transform 0.3s; /* Agregar transición al efecto de zoom */
+  font-size: 1em; /* Tamaño de fuente */
+  margin: 20px;
+  text-align: justify;
+}
+
+.menu-container nav ul li a:hover {
+  text-decoration: underline; /* Agregar subrayado al pasar el cursor */
+  transform: scale(1.1); /* Efecto de zoom */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+  align-items: center; /* Alinea los elementos verticalmente */
+  background-color: #ea86c3;
+}
+
+.menu-container nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start; /* Alinea los elementos del menú a la izquierda */
+  align-items: center; /* Alinea verticalmente */
+}
+
+.menu-container nav ul li {
+  margin-left: 15px;
+}
+
+.menu-container nav ul li:last-child {
+  margin-right: 0;
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribuye los elementos con el máximo espacio posible entre ellos */
+  max-width: 60%; /* Limita el ancho al ancho del contenedor */
+}
+
+.social-links img {
+  width: auto; /* Ajusta el ancho automáticamente */
+  max-width: 30%; /* Evita que los iconos se desborden del contenedor */
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 667px) {
+  .menu-container {
+    display: none; /* Oculta el menú estándar en pantallas pequeñas */
+  }
+
+  .menu-toggle {
+    display: flex; /* Muestra el menú toggle en pantallas pequeñas */
+    justify-content: flex-start; /* Alinea el botón hacia la izquierda */
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin-left: 5px; /* Ajusta el margen izquierdo */
+    height: 100%; /* Ajusta la altura del botón al 100% del contenedor */
+  }
+
+  .menu-toggle i {
+    margin-left: 10px; /* Ajusta el margen derecho del icono */
+    font-size: 20px;
+    cursor: pointer; /* Cambia el cursor a una mano cuando pasas sobre el icono */
+    margin-top: 2px;
+  }
+
+  .menu-container nav ul {
+    flex-direction: column; /* Muestra los elementos del menú en columna */
+    align-items: flex-start; /* Alinea los elementos del menú a la izquierda */
+    font-size: 10px;
+    text-align: justify;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+
+  .menu-container nav ul li {
+    margin: 5px 0; /* Espacio entre los elementos del menú */
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea los iconos a la derecha */
+  }
+
+  .social-links a {
+    margin-left: 20px; /* Ajusta la distancia entre cada icono */
+  }
+}
+
+/* Estilos para la imagen principal */
+.imagen-principal {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.imagen-principal img {
+  width: 100%;
+  height: auto;
+}
+
+.texto-superpuesto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  text-align: center;
+  font-size: 3vw; /* Utilizamos unidades vw para que el tamaño del texto se ajuste según el ancho de la pantalla */
+  white-space: nowrap;
+}
+
+/* Estilos para la sección "About Us" */
+#about {
+  padding: 20px;
+}
+
+.about-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-container h2 {
+  font-size: 3em; /* Reducir el tamaño del título */
+  color: #000;
+}
+
+.about-container p {
+  font-size: 1.5em; /* Reducir el tamaño del texto */
+  text-align: justify; /* Justificar el texto */
+  max-width: 800px; /* Establecer un ancho máximo para el texto */
+  margin: 0 auto; /* Centrar horizontalmente */
+  color: #000;
+}
+
+/* Media queries para ajustar el diseño en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .about-container {
+    padding: 0 20px; /* Agregar espacio a los lados en pantallas pequeñas */
+  }
+  .about-container h2 {
+    font-size: 2em; /* Reducir el tamaño del título en pantallas pequeñas */
+  }
+  .about-container p {
+    font-size: 1.2em; /* Reducir el tamaño del texto en pantallas pequeñas */
+  }
+}
+/* Estilo para el contenedor de servicios */
+.services-container {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  position: relative; /* Añadido para posicionar los botones de navegación */
+  padding: 20px 0;
+  margin: 0 auto; /* Centra el contenedor */
+  max-width: 1200px; /* Ajusta el ancho máximo según tus preferencias */
+  width: 80%; /* Añade esta línea para establecer el ancho del contenedor */
+}
+
+/* Estilos generales */
+#services {
+  overflow: visible;
+}
+.services-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.services-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Agregado para alinear verticalmente en el centro */
+  transition: transform 0.3s ease;
+  overflow: visible;
+}
+
+.service-item {
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+  overflow: visible;
+  flex: 0 0 calc(16.66% - 20px); /* Cambiado el 20% por 16.66% */
+  max-width: calc(100% - 50px);
+}
+
+.service-item img {
+  overflow: visible;
+  width: 100px;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.service-item:hover {
+  transform: scale(1.1);
+}
+
+.service-image {
+  width: 70%;
+  height: auto;
+}
+
+.service-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.service-text {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #000;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  overflow: visible;
+}
+
+.services-txt {
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Estilos específicos para el carrusel */
+.owl-carousel .owl-item .service-item {
+  width: auto;
+}
+
+.owl-carousel .owl-item .service-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.owl-carousel .owl-item .service-item .service-text {
+  font-size: 1em;
+}
+
+.services-container.owl-carousel.owl-loaded {
+  overflow: visible !important;
+  width: 100%; /* Ajustar el ancho según sea necesario */
+  height: 400px; /* Ajustar la altura según sea necesario */
+}
+
+.owl-dots-ps {
+  position: absolute;
+  bottom: 10px; /* Ajusta la posición vertical */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Centra horizontalmente */
+  text-align: center; /* Alinea los puntos al centro */
+  z-index: 1; /* Asegura que estén por encima del contenido */
+}
+
+.owl-dots-ps .owl-dot {
+  display: inline-block;
+  width: 10px; /* Ancho de cada punto */
+  height: 10px; /* Alto de cada punto */
+  background-color: gray; /* Color de los puntos */
+  border-radius: 50%; /* Hace que los puntos sean redondos */
+  margin: 0 5px; /* Espacio entre los puntos */
+  cursor: pointer; /* Cambia el cursor al pasar sobre los puntos */
+}
+
+.owl-dots-ps .owl-dot.active {
+  background-color: black; /* Color del punto activo */
+}
+
+.contact-button-container {
+  text-align: center; /* Centra el botón horizontalmente */
+  margin-top: 50px; /* Espacio superior */
+}
+
+.contact-button-container button {
+  font-size: 2em; /* Tamaño de letra de 1.5em */
+  padding: 10px 20px; /* Espaciado interno */
+  background-color: #48e120; /* Color de fondo */
+  border: none; /* Eliminar borde */
+  border-radius: 20px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  transition: transform 0.3s; /* Agregar efecto de transición al hacer hover */
+  color: white;
+  text-align: center;
+}
+
+.contact-button-container button:hover {
+  transform: scale(1.1); /* Efecto de zoom al hacer hover */
+}
+
+/* Media query para dispositivos pequeños */
+@media screen and (max-width: 767px) {
+  .owl-carousel .owl-stage {
+    display: flex;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .owl-carousel .owl-item {
+    flex: 0 0 auto;
+    max-width: none;
+  }
+
+  .services-txt {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .contact-button-ss {
+    text-align: center; /* Centrar el botón horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+  }
+
+  .contact-button-ss button {
+    font-size: 1em; /* Tamaño de letra de 1.5em */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #48e120; /* Color de fondo */
+    border: none; /* Eliminar borde */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: transform 0.3s; /* Agregar efecto de transición al hacer hover */
+    color: white;
+  }
+
+  .contact-button-ss button:hover {
+    transform: scale(1.1); /* Efecto de zoom al hacer hover */
+  }
+
+  .contact-button-container {
+    text-align: center; /* Centra el botón horizontalmente */
+    margin-top: 50px; /* Espacio superior */
+  }
+
+  .contact-button-container button {
+    font-size: 1.5m; /* Tamaño de letra de 1.5em */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #48e120; /* Color de fondo */
+    border: none; /* Eliminar borde */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: transform 0.3s; /* Agregar efecto de transición al hacer hover */
+    color: white;
+    text-align: center;
+  }
+
+  .contact-button-container button:hover {
+    transform: scale(1.1); /* Efecto de zoom al hacer hover */
+  }
+}
+/* Estilos para el carrusel de proyectos de alto valor*/
+.projects-container h2 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.projects-container p {
+  font-size: 1.5em; /* Reducir el tamaño del texto */
+  text-align: justify; /* Justificar el texto */
+  max-width: 800px; /* Establecer un ancho máximo para el texto */
+  margin: 0 auto; /* Centrar horizontalmente */
+  color: #000;
+}
+.carousel-container {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  max-width: 100%;
+  overflow: hidden;
+  margin: 50px auto; /* Margen automático en la parte superior e inferior, y centrado horizontalmente */
+  max-width: 1500px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: none; /* Ocultar todas las imágenes por defecto */
+}
+
+.carousel img.active {
+  display: block; /* Mostrar solo la imagen activa */
+}
+
+/* Estilos para el ícono de seguimiento */
+.carousel-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.carousel-icon span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-icon span.active {
+  background-color: black;
+}
+
+.cierre-section p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-container {
+    padding: 0 20px; /* Agregar espacio a los lados en pantallas pequeñas */
+  }
+
+  .projects-container h2 {
+    text-align: center;
+    font-size: 1.5em; /* Reducir el tamaño del título en pantallas pequeñas */
+  }
+
+  /* Estilo para el párrafo dentro del contenedor de proyectos en pantallas pequeñas */
+  .projects-container p {
+    font-size: 1em; /* Reducir el tamaño del texto en pantallas pequeñas */
+    padding: 0 20px; /* Agregar espacio a los lados en pantallas pequeñas */
+    margin-bottom: 20px; /* Agregar espacio inferior en pantallas pequeñas */
+  }
+
+  .carousel-container {
+    margin: 20px auto; /* Reducir el margen del carrusel en pantallas pequeñas */
+  }
+
+  /* Estilo para los botones del carrusel en pantallas pequeñas */
+  .carousel-icon span {
+    width: 8px; /* Reducir el tamaño de los botones */
+    height: 8px; /* Reducir el tamaño de los botones */
+    margin: 0 3px; /* Reducir el margen entre los botones */
+  }
+
+  .cierre-section p {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+/* Estilos para la sección de casos de éxito */
+
+.box-image {
+  position: relative;
+}
+
+.box-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  opacity: 0; /* Por defecto, el fondo oscuro está oculto */
+  transition: opacity 0.3s; /* Transición suave */
+}
+
+.box:hover .box-image::after {
+  opacity: 1; /* Aumenta la opacidad al pasar el cursor */
+}
+
+.box-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0.7; /* Opacidad inicial del cuadro de texto */
+  color: white;
+}
+
+.box:hover .box-content {
+  transform: scale(1.05);
+  opacity: 5;
+}
+.encabezado-boxes h2 {
+  text-align: left;
+  font-size: 3em;
+}
+
+.testimonials-tc h2 {
+  text-align: center;
+  font-size: 3em;
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .box-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    opacity: 0.7; /* Opacidad para las imágenes en pantallas pequeñas */
+    transition: opacity 0.3s; /* Transición suave */
+  }
+
+  .box:hover .box-image::after {
+    opacity: 5; /* Opacidad aumentada al pasar el cursor en pantallas pequeñas */
+  }
+
+  .box-content {
+    padding: 20px;
+    text-align: left;
+    opacity: 5; /* Opacidad inicial del cuadro de texto en pantallas pequeñas */
+    color: white;
+  }
+
+  .encabezado-boxes h2 {
+    text-align: left;
+    font-size: 1.5em;
+    color: white;
+  }
+
+  .box-content p {
+    font-size: 18px; /* Tamaño de letra para los párrafos */
+  }
+
+  .testimonials-tc h2 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+/* Apartado para agenda tu cita */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="tel"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #48e120;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3c9a1b;
+}
+
+
+/* ESTILOS PARA EL PIE DE PÁGINA */
+
+.footer {
+  display: flex;
+  flex-direction: row; /* Alinea los elementos en una fila */
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+  padding: 20px;
+  background-color: #ea86c3;
+  height: 30vh; /* Ajusta la altura del footer al 30% del viewport */
+  margin-top: 5%;
+}
+
+.footer-links {
+  margin-right: auto; /* Empuja los enlaces hacia la izquierda */
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #000;
+}
+
+.footer-links ul li {
+  margin-right: 20px; /* Ajusta el margen entre los elementos de la lista */
+  margin-bottom: 10px;
+}
+
+.footer-links ul li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+  margin-bottom: 0; /* Elimina el margen inferior del último ítem */
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline; /* Subrayado al hacer hover */
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#map-container {
+  order: 2; /* Cambiamos el orden para que aparezca después en la disposición */
+}
+
+#map-container {
+  order: 1; /* Cambiamos el orden para que aparezca antes en la disposición */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  text-wrap: nowrap;
+}
+
+#map {
+  width: 100%;
+  height: 200px;
+}
+
+.footer {
+  position: relative; /* Establece la posición relativa en el contenedor principal */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ea86c3;
+  height: 30vh;
+  margin-top: 5%;
+}
+
+.contact-social-container {
+  position: absolute; /* Establece la posición absoluta */
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+.contact-social-links {
+  display: flex;
+  align-items: center;
+}
+
+.contact-social-links p {
+  margin-right: 10px;
+}
+
+.contact-social-links a {
+  color: #000;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.contact-social-links a:last-child {
+  margin-right: 0;
+}
+
+
+/* Estilos para el contenedor principal */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los contenedores se envuelvan cuando no haya suficiente espacio */
+  justify-content: center; /* Centra horizontalmente */
+}
+
+.importance-message h2, .importance-message p {
+  color: #fff;
+}
+
+/* Estilos para los contenedores de los servicios */
+.content-overlay {
+  position: relative;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: calc(40% - 40px);
+  color: #fff;
+  margin: 20px; /* Espacio exterior entre los contenedores */
+}
+
+.content-overlay h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px; /* Añade espacio inferior */
+}
+
+
+.content-overlay li {
+  text-align: justify;
+  font-size: 1em;
+  margin-bottom: 15px; /* Añade espacio entre cada ítem */
+}
+
+/* Estilos para los botones */
+.more-info-btn-1,
+.more-info-btn-2 {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #48e120;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  text-decoration: none;
+  margin-top: 20px;
+  width: 150px;
+  text-align: center;
+}
+
+.more-info-btn-1:hover,
+.more-info-btn-2:hover {
+  transform: scale(1.05);
+  background-color: #3fe416;
+}
+
+/* Estilos para el video de fondo */
+.residential-cleaning-bg-container {
+  position: relative;
+  height: 230vh; /* Cambia esta altura según tus necesidades */
+  width: 100%;
+  overflow: hidden;
+}
+
+.residential-cleaning-bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1; /* Para que el video esté en el fondo */
+}
+
+@media screen and (max-width: 768px) {
+  /* Ajustes para el mensaje de importancia */
+  .importance-message {
+    font-size: 1em; /* Reducir el tamaño del texto */
+  }
+
+  /* Ajustes para los contenedores */
+  .container {
+    align-items: center; /* Centra los contenedores horizontalmente */
+  }
+
+  .content-overlay {
+    position: relative;
+    padding: 50px; /* Ajusta el relleno del contenedor */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: calc(80% - 40px);
+    color: #fff;
+    margin: 20px;
+    margin-bottom: 10px;
+  }
+
+  .content-overlay h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 8px; /* Añade espacio inferior */
+    margin-top: 0;
+    color: #fff;
+  }
+  .content-overlay li {
+    text-align: justify;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-left: 10%; /* Ajusta el espacio a la izquierda */
+    color: #fff;
+  }
+  .content-overlay ul {
+    padding: 0; /* Elimina el relleno de la lista */
+    margin: 0; /* Elimina el margen de la lista */
+  }
+
+  .residential-cleaning-bg-container {
+    position: relative;
+    height: 300vh; /* Cambia esta altura según tus necesidades */
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .residential-cleaning-bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; /* Para que el video esté en el fondo */
+  }
+}
+
+/* Estilos para el video de fondo */
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 200vh;
+  overflow: hidden;
+}
+
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para el párrafo */
+.post-construction-p {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 1200px; /* Ajustar el ancho máximo */
+  margin-top: 60px;
+}
+
+.post-construction-p p {
+  color: #fff;
+  font-size: 1em;
+}
+
+.post-construction-p h2 {
+  color: #fff;
+  font-size: 2em;
+}
+
+/* Estilos para el contenedor de superposición */
+.post-construction-cleaning-overlay {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px; /* Ajustar el ancho máximo */
+  margin-top: 120px;
+}
+
+.post-construction-cleaning-overlay h2 {
+  color: white;
+  font-size: 2em;
+}
+
+.post-construction-cleaning-overlay li {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: justify;
+}
+
+/* Estilos para el botón */
+.post-construction-cleaning-more-info-btn-1 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #48e120;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.post-construction-cleaning-more-info-btn-1:hover {
+  transform: scale(1.05);
+  background-color: #3fe416;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .background-container {
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    overflow: hidden;
+  }
+
+  #video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .post-construction-p {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px; /* Ajustar el ancho máximo */
+  }
+
+  .post-construction-p p {
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .post-construction-p h2 {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .post-construction-cleaning-overlay {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+  }
+
+  .post-construction-cleaning-overlay h2 {
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .post-construction-cleaning-overlay ul {
+    padding-left: 5px; /* Elimina el margen interno izquierdo de la lista */
+  }
+
+  .post-construction-cleaning-overlay li {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: justify;
+    margin-bottom: 5px; /* Ajusta el espacio entre cada elemento de la lista */
+    margin-top: 10px;
+  }
+
+  /* Estilos para el botón */
+  .post-construction-cleaning-more-info-btn-1 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #48e120;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    text-decoration: none;
+    margin-top: 15px;
+  }
+
+  .post-construction-cleaning-more-info-btn-1:hover {
+    transform: scale(1.05);
+    background-color: #3fe416;
+  }
+}
+/* Estilos para el contenedor de video */
+#airbnb-cleaning-background {
+  position: relative;
+  width: 100%;
+  height: 180vh; /* Ajusta la altura según sea necesario */
+  overflow: hidden;
+}
+
+/* Estilos para el video */
+#airbnb-cleaning-video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el tamaño del video para cubrir el contenedor */
+}
+
+/* Estilos para el contenedor del párrafo de beneficios de limpieza de Airbnb */
+.airbnb-cleaning-benefits {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  color: white; /* Color del texto */
+  max-width: 1200px; /* Nuevo ancho máximo del contenedor */
+}
+
+/* Estilos para el título del párrafo */
+.airbnb-cleaning-benefits h2 {
+  color: white; /* Color del texto del título */
+  font-size: 24px; /* Tamaño del texto del título */
+  margin-bottom: 20px; /* Espacio inferior del título */
+}
+
+/* Estilos para el texto del párrafo */
+.airbnb-cleaning-benefits p {
+  color: white; /* Color del texto del párrafo */
+  font-size: 18px; /* Tamaño del texto del párrafo */
+  line-height: 1.6; /* Espacio entre líneas */
+}
+
+/* Estilos para el contenedor de superposición de Airbnb */
+.airbnb-cleaning-overlay {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  color: white; /* Color del texto */
+  max-width: 500px; /* Nuevo ancho máximo del contenedor */
+}
+
+/* Estilos para el texto principal */
+.airbnb-cleaning-overlay-text {
+  font-size: 2em;
+}
+
+/* Estilos para la lista */
+.airbnb-cleaning-list {
+  padding: 40px;
+}
+
+.airbnb-cleaning-list li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Estilos para el botón */
+.airbnb-cleaning-more-info-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #48e120;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.airbnb-cleaning-more-info-btn:hover {
+  transform: scale(1.05);
+  background-color: #3fe416;
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para el contenedor de video */
+  #airbnb-cleaning-background {
+    position: relative;
+    width: 100%;
+    height: 160vh; /* Ajusta la altura según sea necesario */
+    overflow: hidden;
+  }
+
+  /* Estilos para el video */
+  #airbnb-cleaning-video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño del video para cubrir el contenedor */
+  }
+
+  .airbnb-cleaning-benefits {
+    position: absolute; /* Cambiar de absolute a relative */
+    width: 85%; /* Ajustar el ancho al 90% del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white; /* Color del texto */
+    max-width: 100%; /* Nuevo ancho máximo del contenedor */
+    top: 35%; /* Ajustar la posición vertical */
+  }
+
+  /* Estilos para el título del párrafo */
+  .airbnb-cleaning-benefits h2 {
+    color: white; /* Color del texto del título */
+    font-size: 20px; /* Tamaño del texto del título */
+    margin-bottom: 20px; /* Espacio inferior del título */
+  }
+
+  /* Estilos para el texto del párrafo */
+  .airbnb-cleaning-benefits p {
+    color: white; /* Color del texto del párrafo */
+    font-size: 18px; /* Tamaño del texto del párrafo */
+    line-height: 1.6; /* Espacio entre líneas */
+  }
+
+  /* Estilos para el contenedor de superposición de Airbnb */
+  .airbnb-cleaning-overlay {
+    position: absolute; /* Cambiar de absolute a relative */
+    width: 85%; /* Ajustar el ancho al 90% del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white; /* Color del texto */
+    max-width: 100%; /* Nuevo ancho máximo del contenedor */
+    top: 85%; /* Ajustar la posición vertical */
+  }
+
+  /* Estilos para el texto principal */
+  .airbnb-cleaning-overlay-text {
+    font-size: 14px;
+  }
+
+  /* Estilos para la lista */
+  .airbnb-cleaning-list {
+    padding: 14px;
+  }
+
+  .airbnb-cleaning-list li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  /* Estilos para el botón */
+  .airbnb-cleaning-more-info-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #48e120;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+
+  .airbnb-cleaning-more-info-btn:hover {
+    transform: scale(1.05);
+    background-color: #3fe416;
+  }
+}
+
+/* Estilos para el contenedor del video de fondo */
+.background-container-cc {
+  position: relative;
+  width: 100%;
+  height: 180vh;
+  overflow: hidden;
+}
+
+/* Estilos para el video de fondo */
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para el contenedor de los servicios de limpieza comercial */
+.commercial-cleaning-services {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px; /* Espacio entre secciones */
+  max-width: 80%; /* Ancho máximo del contenedor */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.commercial-cleaning-services-li {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 80px; /* Espacio entre secciones */
+  max-width: 40%; /* Ancho máximo del contenedor */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.commercial-cleaning-services-li h2 {
+  color: white;
+  font-size: 1cm;
+  margin-bottom: 10px; /* Espacio inferior del encabezado */
+  text-align: center;
+}
+
+.commercial-cleaning-services h2 {
+  color: white;
+  font-size: 1cm;
+  margin-bottom: 10px; /* Espacio inferior del encabezado */
+  text-align: center;
+}
+
+.commercial-cleaning-services p {
+  color: white;
+  font-size: 1em;
+  margin-bottom: 10px; /* Espacio inferior del párrafo */
+  text-align: justify;
+}
+
+.commercial-cleaning-services ul {
+  padding: 0;
+}
+
+.commercial-cleaning-services-li ul li {
+  font-size: 1em;
+  color: #fff;
+  text-align: justify;
+  margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+
+/* Estilos para el botón de contacto */
+.button-comercial-c {
+  text-align: center; /* Centra el botón horizontalmente */
+  margin-top: 20px; /* Espacio superior del botón */
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #48e120;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+  background-color: #3fe416;
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para el contenedor del video de fondo */
+  .background-container-cc {
+    height: 200vh; /* Aumenta la altura del contenedor del video */
+  }
+
+  /* Estilos para el contenedor de los servicios de limpieza comercial */
+  .commercial-cleaning-services {
+    top: 25%; /* Ajusta la posición vertical */
+    transform: translate(-50%, -50%);
+    padding: 10px; /* Reduce el relleno */
+    max-width: 80%; /* Reduce el ancho máximo del contenedor */
+
+    font-size: 14px;
+  }
+
+  .commercial-cleaning-services h2 {
+    font-size: 20px;
+  }
+
+  /* Estilos para el contenedor de la lista de servicios */
+  .commercial-cleaning-services-li {
+    top: 20%; /* Ajusta la posición vertical */
+    transform: translate(-50%, -50%);
+    padding: 10px; /* Reduce el relleno */
+    max-width: 90%; /* Reduce el ancho máximo del contenedor */
+    margin-top: 30px; /* Ajusta el espacio superior */
+    font-size: 20px;
+  }
+
+  /* Estilos para el botón de contacto */
+  .button-comercial-c {
+    margin-top: 20px; /* Ajusta el espacio superior */
+  }
+}
+
+.container-login {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+p {
+  text-align: center;
+}
+
+/* Estilos para el enlace de regreso */
+.back-to-home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
